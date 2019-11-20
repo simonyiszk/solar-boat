@@ -1,0 +1,23 @@
+<section id="news">
+  <h3>News</h3>
+
+  <!-- Individual news pieces -->
+  <div *ngFor="let news of news">
+    <h4 class="news-title">
+      <!-- Title -->
+      {{ news.title }}
+    </h4>
+    <span class="news-date">
+      <!-- Date -->
+      <!-- TODO date icon -->
+      {{ news.date }}
+    </span>
+    <span class="news-content">
+      <!-- Content -->
+      {{ news.content}}
+    </span>
+    <!-- Image (if there is any) -->
+    <img *ngIf="news.image" [alt]="news.title" [src]="news.image">
+  </div>
+
+</section>

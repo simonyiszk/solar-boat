@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../mixins";
+
+#introduction_splash {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: $primary-text-color;
+  margin: 2em 0 1em;
+  font-size: $title-font-size;
+}
+
+#introduction-content {
+  //width: 768px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+p {
+  //TODO do something with the text color instead of setting opacity
+  opacity: 0.85;
+  font-size: 3vw;
+  text-align: left;
+
+  &:first-child {
+    padding: 0 0 20px;
+  }
+
+  &:not(:first-child) {
+    padding: 20px 0;
+  }
+}
+
+@include respond-above(md) {
+
+}
+
+
+
+
+
+
+
+
+
+
